@@ -18,6 +18,9 @@ public:
 private:
     Ui::Dialog *ui;
     QMovie *movie;
+private slots:
+    void startMovieSlot();
+    void stopMovieSlot();
 };
 
 #endif // DIALOG_H
