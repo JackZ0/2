@@ -40,6 +40,7 @@ private slots:
     void setcolorSlot();
     void currentDateTimeSlot();
     void aboutwebUrlSlot();
+    void aboutdialogSolt();
 };
 
 #endif // MAINWINDOW_H

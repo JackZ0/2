@@ -45,8 +45,8 @@ public:
     QAction *findactioon;
     QAction *actionzid;
     QAction *fontaction;
-    QAction *actionzhua;
-    QAction *actionchak;
+    QAction *urlaction;
+    QAction *aboutsoftwareaction;
     QAction *aboutaction;
     QAction *datetimeaction;
     QAction *coloraction;
@@ -130,10 +130,10 @@ public:
         actionzid->setObjectName(QStringLiteral("actionzid"));
         fontaction = new QAction(MainWindow);
         fontaction->setObjectName(QStringLiteral("fontaction"));
-        actionzhua = new QAction(MainWindow);
-        actionzhua->setObjectName(QStringLiteral("actionzhua"));
-        actionchak = new QAction(MainWindow);
-        actionchak->setObjectName(QStringLiteral("actionchak"));
+        urlaction = new QAction(MainWindow);
+        urlaction->setObjectName(QStringLiteral("urlaction"));
+        aboutsoftwareaction = new QAction(MainWindow);
+        aboutsoftwareaction->setObjectName(QStringLiteral("aboutsoftwareaction"));
         aboutaction = new QAction(MainWindow);
         aboutaction->setObjectName(QStringLiteral("aboutaction"));
         datetimeaction = new QAction(MainWindow);
@@ -202,10 +202,10 @@ public:
         menu_O->addAction(actionzid);
         menu_O->addAction(fontaction);
         menu_O->addAction(coloraction);
-        menu_H->addAction(actionchak);
+        menu_H->addAction(aboutsoftwareaction);
         menu_H->addAction(aboutaction);
         menu_H->addAction(updateaction);
-        menu_3->addAction(actionzhua);
+        menu_3->addAction(urlaction);
 
         retranslateUi(MainWindow);
 
@@ -232,8 +232,8 @@ public:
         findactioon->setText(QApplication::translate("MainWindow", "\346\237\245\346\211\276", Q_NULLPTR));
         actionzid->setText(QApplication::translate("MainWindow", "\350\207\252\345\212\250\346\215\242\350\241\214", Q_NULLPTR));
         fontaction->setText(QApplication::translate("MainWindow", "\345\255\227\344\275\223", Q_NULLPTR));
-        actionzhua->setText(QApplication::translate("MainWindow", "\347\212\266\346\200\201\346\240\217", Q_NULLPTR));
-        actionchak->setText(QApplication::translate("MainWindow", "\346\237\245\347\234\213\345\270\256\345\212\251", Q_NULLPTR));
+        urlaction->setText(QApplication::translate("MainWindow", "\345\256\230\347\275\221", Q_NULLPTR));
+        aboutsoftwareaction->setText(QApplication::translate("MainWindow", "\346\237\245\347\234\213\345\270\256\345\212\251", Q_NULLPTR));
         aboutaction->setText(QApplication::translate("MainWindow", "\345\205\263\344\272\216Qt", Q_NULLPTR));
         datetimeaction->setText(QApplication::translate("MainWindow", "\346\227\245\346\234\237", Q_NULLPTR));
         coloraction->setText(QApplication::translate("MainWindow", "\351\242\234\350\211\262", Q_NULLPTR));

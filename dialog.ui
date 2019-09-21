@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>Dialog</class>
  <widget class="QDialog" name="Dialog">
@@ -12,6 +13,23 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>331</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 36pt &quot;Aharoni&quot;;
+font: 14pt &quot;楷体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>版权所有，盗版必究！版权归我所有！！！</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

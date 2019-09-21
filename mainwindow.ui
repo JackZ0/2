@@ -71,7 +71,7 @@
     <property name="title">
      <string>帮助(&amp;H)</string>
     </property>
-    <addaction name="actionchak"/>
+    <addaction name="aboutsoftwareaction"/>
     <addaction name="aboutaction"/>
     <addaction name="updateaction"/>
    </widget>
@@ -79,7 +79,7 @@
     <property name="title">
      <string>查看（&amp;V）</string>
     </property>
-    <addaction name="actionzhua"/>
+    <addaction name="urlaction"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
@@ -217,12 +217,12 @@
     <string>字体</string>
    </property>
   </action>
-  <action name="actionzhua">
+  <action name="urlaction">
    <property name="text">
-    <string>状态栏</string>
+    <string>官网</string>
    </property>
   </action>
-  <action name="actionchak">
+  <action name="aboutsoftwareaction">
    <property name="text">
     <string>查看帮助</string>
    </property>

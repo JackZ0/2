@@ -1,5 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "dialog.h"
+
 #include <QtCore>
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -22,6 +24,8 @@ MainWindow::MainWindow(QWidget *parent) :
     QObject::connect(ui->coloraction,SIGNAL(triggered()),this,SLOT(setcolorSlot()));
     QObject::connect(ui->datetimeaction,SIGNAL(triggered()),this,SLOT(currentDateTimeSlot()));
     QObject::connect(ui->aboutaction,SIGNAL(triggered()),qApp,SLOT(aboutQt()));
+    QObject::connect(ui->urlaction,SIGNAL(triggered()),this,SLOT(aboutwebUrlSlot()));
+    QObject::connect(ui->aboutsoftwareaction,SIGNAL(triggered()),this,SLOT(aboutdialogSolt()));
 }
 
 MainWindow::~MainWindow()
@@ -154,6 +158,12 @@ void MainWindow::currentDateTimeSlot(){
 }
 
 void  MainWindow::aboutwebUrlSlot(){
-    QDesktopServices::openUrl(QUrl("http://www.baidu.com"));
+    QDesktopServices::openUrl(QUrl("https://github.com/JackZ0"));
 
+}
+
+
+void MainWindow::aboutdialogSolt(){
+    Dialog *aboutdialog = new Dialog;
+    aboutdialog->show();
 }
