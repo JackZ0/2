@@ -6,6 +6,9 @@ Dialog::Dialog(QWidget *parent) :
     ui(new Ui::Dialog)
 {
     ui->setupUi(this);
+    this->movie = new QMovie("img/Tomjerry.gif");
+    ui->movielabel->setMovie(this->movie);
+    this->movie->start();
 }
 
 Dialog::~Dialog()

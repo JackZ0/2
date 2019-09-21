@@ -2,7 +2,7 @@
 #define DIALOG_H
 
 #include <QDialog>
-
+#include <QMovie>
 namespace Ui {
 class Dialog;
 }
@@ -17,6 +17,7 @@ public:
 
 private:
     Ui::Dialog *ui;
+    QMovie *movie;
 };
 
 #endif // DIALOG_H

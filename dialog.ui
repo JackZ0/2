@@ -17,9 +17,9 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>120</y>
+     <y>40</y>
      <width>331</width>
-     <height>16</height>
+     <height>71</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -27,7 +27,46 @@
 font: 14pt &quot;楷体&quot;;</string>
    </property>
    <property name="text">
-    <string>版权所有，盗版必究！版权归我所有！！！</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;版权所有，盗版必究！版权归我所有！！！&lt;/p&gt;&lt;p&gt;你还敢盗版吗？&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="noButton">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>270</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>不敢了</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="comeonButton">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>270</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>放马过来吧</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="movielabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>110</y>
+     <width>341</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>
