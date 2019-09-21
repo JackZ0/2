@@ -11,6 +11,8 @@
 #include <QColorDialog>
 #include <QWidget>
 #include <QDateTime>
+#include <QUrl>
+#include <QDesktopServices>
 
 namespace Ui {
 class MainWindow;
@@ -37,6 +39,7 @@ private slots:
     void setfontSlot();
     void setcolorSlot();
     void currentDateTimeSlot();
+    void aboutwebUrlSlot();
 };
 
 #endif // MAINWINDOW_H

@@ -72,7 +72,8 @@
      <string>帮助(&amp;H)</string>
     </property>
     <addaction name="actionchak"/>
-    <addaction name="actiona"/>
+    <addaction name="aboutaction"/>
+    <addaction name="updateaction"/>
    </widget>
    <widget class="QMenu" name="menu_3">
     <property name="title">
@@ -226,9 +227,9 @@
     <string>查看帮助</string>
    </property>
   </action>
-  <action name="actiona">
+  <action name="aboutaction">
    <property name="text">
-    <string>关于记事本</string>
+    <string>关于Qt</string>
    </property>
   </action>
   <action name="datetimeaction">
@@ -244,6 +245,11 @@
   <action name="SelectAllaction">
    <property name="text">
     <string>全选（&amp;A)</string>
+   </property>
+  </action>
+  <action name="updateaction">
+   <property name="text">
+    <string>更新</string>
    </property>
   </action>
  </widget>

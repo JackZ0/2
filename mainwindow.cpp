@@ -21,6 +21,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QObject::connect(ui->SelectAllaction,SIGNAL(triggered(bool)),ui->textEdit,SLOT(selectAll()));
     QObject::connect(ui->coloraction,SIGNAL(triggered()),this,SLOT(setcolorSlot()));
     QObject::connect(ui->datetimeaction,SIGNAL(triggered()),this,SLOT(currentDateTimeSlot()));
+    QObject::connect(ui->aboutaction,SIGNAL(triggered()),qApp,SLOT(aboutQt()));
 }
 
 MainWindow::~MainWindow()
@@ -150,4 +151,9 @@ void MainWindow::currentDateTimeSlot(){
     QDateTime datetime = QDateTime::currentDateTime();
     QString time = datetime.toString("yyyy-MM-dd hh:mm:ss");
     ui->textEdit->setText(time);
+}
+
+void  MainWindow::aboutwebUrlSlot(){
+    QDesktopServices::openUrl(QUrl("http://www.baidu.com"));
+
 }

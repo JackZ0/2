@@ -11,5 +11,6 @@
         <file>img/find.jpg</file>
         <file>img/open.png</file>
         <file>img/bodyimg.jpg</file>
+        <file>img/app.ico</file>
     </qresource>
 </RCC>

@@ -47,10 +47,11 @@ public:
     QAction *fontaction;
     QAction *actionzhua;
     QAction *actionchak;
-    QAction *actiona;
+    QAction *aboutaction;
     QAction *datetimeaction;
     QAction *coloraction;
     QAction *SelectAllaction;
+    QAction *updateaction;
     QWidget *centralWidget;
     QGridLayout *gridLayout;
     QTextEdit *textEdit;
@@ -133,14 +134,16 @@ public:
         actionzhua->setObjectName(QStringLiteral("actionzhua"));
         actionchak = new QAction(MainWindow);
         actionchak->setObjectName(QStringLiteral("actionchak"));
-        actiona = new QAction(MainWindow);
-        actiona->setObjectName(QStringLiteral("actiona"));
+        aboutaction = new QAction(MainWindow);
+        aboutaction->setObjectName(QStringLiteral("aboutaction"));
         datetimeaction = new QAction(MainWindow);
         datetimeaction->setObjectName(QStringLiteral("datetimeaction"));
         coloraction = new QAction(MainWindow);
         coloraction->setObjectName(QStringLiteral("coloraction"));
         SelectAllaction = new QAction(MainWindow);
         SelectAllaction->setObjectName(QStringLiteral("SelectAllaction"));
+        updateaction = new QAction(MainWindow);
+        updateaction->setObjectName(QStringLiteral("updateaction"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         gridLayout = new QGridLayout(centralWidget);
@@ -200,7 +203,8 @@ public:
         menu_O->addAction(fontaction);
         menu_O->addAction(coloraction);
         menu_H->addAction(actionchak);
-        menu_H->addAction(actiona);
+        menu_H->addAction(aboutaction);
+        menu_H->addAction(updateaction);
         menu_3->addAction(actionzhua);
 
         retranslateUi(MainWindow);
@@ -230,10 +234,11 @@ public:
         fontaction->setText(QApplication::translate("MainWindow", "\345\255\227\344\275\223", Q_NULLPTR));
         actionzhua->setText(QApplication::translate("MainWindow", "\347\212\266\346\200\201\346\240\217", Q_NULLPTR));
         actionchak->setText(QApplication::translate("MainWindow", "\346\237\245\347\234\213\345\270\256\345\212\251", Q_NULLPTR));
-        actiona->setText(QApplication::translate("MainWindow", "\345\205\263\344\272\216\350\256\260\344\272\213\346\234\254", Q_NULLPTR));
+        aboutaction->setText(QApplication::translate("MainWindow", "\345\205\263\344\272\216Qt", Q_NULLPTR));
         datetimeaction->setText(QApplication::translate("MainWindow", "\346\227\245\346\234\237", Q_NULLPTR));
         coloraction->setText(QApplication::translate("MainWindow", "\351\242\234\350\211\262", Q_NULLPTR));
         SelectAllaction->setText(QApplication::translate("MainWindow", "\345\205\250\351\200\211\357\274\210&A)", Q_NULLPTR));
+        updateaction->setText(QApplication::translate("MainWindow", "\346\233\264\346\226\260", Q_NULLPTR));
         menu->setTitle(QApplication::translate("MainWindow", "\346\226\207\344\273\266\357\274\210&F\357\274\211", Q_NULLPTR));
         menu_2->setTitle(QApplication::translate("MainWindow", "\347\274\226\350\276\221(&E)", Q_NULLPTR));
         menu_O->setTitle(QApplication::translate("MainWindow", "\346\240\274\345\274\217\357\274\210&O)", Q_NULLPTR));
