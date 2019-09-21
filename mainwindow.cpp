@@ -33,6 +33,41 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::closeEvent(QCloseEvent *event){
+    //event->ignore();
+    // event->accept();
+    if(ui->textEdit->document()->isModified()){
+        QMessageBox msgBox;
+        msgBox.setText("文件已经修改了.");
+        msgBox.setInformativeText("是否保存修改文档？");
+        msgBox.setStandardButtons(QMessageBox::Save | QMessageBox::Discard | QMessageBox::Cancel);
+        msgBox.setDefaultButton(QMessageBox::Save);
+        int ret = msgBox.exec();
+        switch (ret) {
+         case QMessageBox::Save:
+            this->saveFileSlot();
+             // Save was clicked
+
+             break;
+         case QMessageBox::Discard:
+             event->accept();
+             // Don't Save was clicked
+             break;
+         case QMessageBox::Cancel:
+             // Cancel was clicked
+            event->ignore();
+             break;
+         default:
+             // should never be reached
+             break;
+        }
+    }
+    else{
+         event->accept();
+    }
+}
+
+
 void MainWindow::newFileSlot()
 {
     if(ui->textEdit->document()->isModified())

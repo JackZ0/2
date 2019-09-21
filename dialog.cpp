@@ -1,5 +1,6 @@
 #include "dialog.h"
 #include "ui_dialog.h"
+#include <QDebug>
 
 Dialog::Dialog(QWidget *parent) :
     QDialog(parent),
@@ -7,6 +8,7 @@ Dialog::Dialog(QWidget *parent) :
 {
     ui->setupUi(this);
     this->movie = new QMovie("img/Tomjerry.gif");
+    qDebug() << "current movie has " <<this->movie->frameCount();
     ui->movielabel->setMovie(this->movie);
     this->movie->start();
     QObject::connect(ui->comeonButton,SIGNAL(clicked()),this,SLOT(startMovieSlot()));

@@ -14,6 +14,9 @@
 #include <QUrl>
 #include <QDesktopServices>
 
+#include <QEvent>
+#include <QCloseEvent>
+
 namespace Ui {
 class MainWindow;
 }
@@ -25,11 +28,13 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+protected:
+    void closeEvent(QCloseEvent *event);
 
 private:
     Ui::MainWindow *ui;
-
     QString saveFilename;
+
 private slots:
     void newFileSlot();
     void openFileSlot();
