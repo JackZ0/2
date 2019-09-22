@@ -14,4 +14,8 @@ fileinfo::~fileinfo()
 }
 fileinfo::getFileInfoSlot(){
     QString filename = QFileDialog::getOpenFileName(this,"open file",QDir::homePath());
+    if(filename.isEmpty())
+    {
+        
+    }
 }

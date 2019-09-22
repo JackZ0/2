@@ -58,20 +58,46 @@
     <item row="0" column="1">
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
-       <widget class="QLineEdit" name="lineEdit"/>
+       <widget class="QLineEdit" name="filesizelineEdit"/>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_2"/>
+       <widget class="QLineEdit" name="createtimelineEdit"/>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_3"/>
+       <widget class="QLineEdit" name="LastAccesslineEdit"/>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_4"/>
+       <widget class="QLineEdit" name="isDirlineEdit"/>
       </item>
      </layout>
     </item>
    </layout>
+  </widget>
+  <widget class="QPushButton" name="openpushButton">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>250</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exitpushButton">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>250</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
   </widget>
  </widget>
  <resources/>
