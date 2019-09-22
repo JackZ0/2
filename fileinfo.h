@@ -8,7 +8,7 @@
 #include <QFileDialog>
 #include <QMessageBox>
 #include <QDateTime>
-
+#include <QDebug>
 namespace Ui {
 class fileinfo;
 }
@@ -26,7 +26,7 @@ private:
 
 private slots:
     void getFileInfoSlot();
-    void getCreateTimeSlot();
+  //  void getCreateTimeSlot();
 
 };
 

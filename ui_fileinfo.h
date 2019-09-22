@@ -18,6 +18,7 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -34,10 +35,12 @@ public:
     QLabel *label_3;
     QLabel *label_4;
     QVBoxLayout *verticalLayout_2;
-    QLineEdit *lineEdit;
-    QLineEdit *lineEdit_2;
-    QLineEdit *lineEdit_3;
-    QLineEdit *lineEdit_4;
+    QLineEdit *filesizelineEdit;
+    QLineEdit *createtimelineEdit;
+    QLineEdit *LastAccesslineEdit;
+    QLineEdit *isDirlineEdit;
+    QPushButton *openpushButton;
+    QPushButton *exitpushButton;
 
     void setupUi(QDialog *fileinfo)
     {
@@ -77,29 +80,35 @@ public:
 
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
-        lineEdit = new QLineEdit(formLayoutWidget);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+        filesizelineEdit = new QLineEdit(formLayoutWidget);
+        filesizelineEdit->setObjectName(QStringLiteral("filesizelineEdit"));
 
-        verticalLayout_2->addWidget(lineEdit);
+        verticalLayout_2->addWidget(filesizelineEdit);
 
-        lineEdit_2 = new QLineEdit(formLayoutWidget);
-        lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
+        createtimelineEdit = new QLineEdit(formLayoutWidget);
+        createtimelineEdit->setObjectName(QStringLiteral("createtimelineEdit"));
 
-        verticalLayout_2->addWidget(lineEdit_2);
+        verticalLayout_2->addWidget(createtimelineEdit);
 
-        lineEdit_3 = new QLineEdit(formLayoutWidget);
-        lineEdit_3->setObjectName(QStringLiteral("lineEdit_3"));
+        LastAccesslineEdit = new QLineEdit(formLayoutWidget);
+        LastAccesslineEdit->setObjectName(QStringLiteral("LastAccesslineEdit"));
 
-        verticalLayout_2->addWidget(lineEdit_3);
+        verticalLayout_2->addWidget(LastAccesslineEdit);
 
-        lineEdit_4 = new QLineEdit(formLayoutWidget);
-        lineEdit_4->setObjectName(QStringLiteral("lineEdit_4"));
+        isDirlineEdit = new QLineEdit(formLayoutWidget);
+        isDirlineEdit->setObjectName(QStringLiteral("isDirlineEdit"));
 
-        verticalLayout_2->addWidget(lineEdit_4);
+        verticalLayout_2->addWidget(isDirlineEdit);
 
 
         formLayout->setLayout(0, QFormLayout::FieldRole, verticalLayout_2);
 
+        openpushButton = new QPushButton(fileinfo);
+        openpushButton->setObjectName(QStringLiteral("openpushButton"));
+        openpushButton->setGeometry(QRect(130, 250, 75, 23));
+        exitpushButton = new QPushButton(fileinfo);
+        exitpushButton->setObjectName(QStringLiteral("exitpushButton"));
+        exitpushButton->setGeometry(QRect(280, 250, 75, 23));
 
         retranslateUi(fileinfo);
 
@@ -113,6 +122,8 @@ public:
         label_2->setText(QApplication::translate("fileinfo", "\346\226\207\344\273\266\345\210\233\345\273\272\346\227\266\351\227\264\357\274\232", Q_NULLPTR));
         label_3->setText(QApplication::translate("fileinfo", "\346\234\200\345\220\216\350\256\277\351\227\256\346\227\266\351\227\264\357\274\232", Q_NULLPTR));
         label_4->setText(QApplication::translate("fileinfo", "\346\230\257\345\220\246\344\270\272\347\233\256\345\275\225\357\274\232", Q_NULLPTR));
+        openpushButton->setText(QApplication::translate("fileinfo", "\346\211\223\345\274\200\346\226\207\344\273\266", Q_NULLPTR));
+        exitpushButton->setText(QApplication::translate("fileinfo", "\351\200\200\345\207\272", Q_NULLPTR));
     } // retranslateUi
 
 };

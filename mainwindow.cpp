@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "dialog.h"
+#include "fileinfo.h"
 
 #include <QtCore>
 MainWindow::MainWindow(QWidget *parent) :
@@ -27,7 +28,6 @@ MainWindow::MainWindow(QWidget *parent) :
     QObject::connect(ui->urlaction,SIGNAL(triggered()),this,SLOT(aboutwebUrlSlot()));
     QObject::connect(ui->aboutsoftwareaction,SIGNAL(triggered()),this,SLOT(aboutdialogSolt()));
     QObject::connect(ui->pathaction,SIGNAL(triggered()),this,SLOT(pathactionSlot()));
-
 }
 
 MainWindow::~MainWindow()
@@ -210,4 +210,6 @@ void MainWindow::pathactionSlot()
     qDebug()<< "home path is " << QDir::homePath();
     qDebug()<< "current path is " <<QDir::currentPath();
     qDebug()<< "temp path is " << QDir::tempPath();
+    fileinfo *fileDialog = new fileinfo;
+    fileDialog->show();
 }
