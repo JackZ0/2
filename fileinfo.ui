@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fileinfo</class>
+ <widget class="QDialog" name="fileinfo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>21</y>
+     <width>341</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>文件大小：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>文件创建时间：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>最后访问时间：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>是否为目录：</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLineEdit" name="lineEdit"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_2"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_3"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_4"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
