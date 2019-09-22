@@ -47,6 +47,8 @@ private slots:
     void aboutwebUrlSlot();
     void aboutdialogSolt();
     void pathactionSlot();
+    void listactionSlot();
+
 };
 
 #endif // MAINWINDOW_H

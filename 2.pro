@@ -26,15 +26,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += main.cpp\
         mainwindow.cpp \
     dialog.cpp \
-    fileinfo.cpp
+    fileinfo.cpp \
+    list.cpp
 
 HEADERS  += mainwindow.h \
     dialog.h \
-    fileinfo.h
+    fileinfo.h \
+    list.h
 
 FORMS    += mainwindow.ui \
     dialog.ui \
-    fileinfo.ui
+    fileinfo.ui \
+    list.ui
 
 DISTFILES +=
 

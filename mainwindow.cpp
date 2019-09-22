@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "dialog.h"
 #include "fileinfo.h"
+#include "list.h"
 
 #include <QtCore>
 MainWindow::MainWindow(QWidget *parent) :
@@ -28,6 +29,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QObject::connect(ui->urlaction,SIGNAL(triggered()),this,SLOT(aboutwebUrlSlot()));
     QObject::connect(ui->aboutsoftwareaction,SIGNAL(triggered()),this,SLOT(aboutdialogSolt()));
     QObject::connect(ui->pathaction,SIGNAL(triggered()),this,SLOT(pathactionSlot()));
+    QObject::connect(ui->listaction,SIGNAL(triggered()),this,SLOT(listactionSlot()));
 }
 
 MainWindow::~MainWindow()
@@ -213,3 +215,10 @@ void MainWindow::pathactionSlot()
     fileinfo *fileDialog = new fileinfo;
     fileDialog->show();
 }
+
+void MainWindow::listactionSlot()
+{
+    list *listDialog = new list;
+    listDialog->show();
+}
+

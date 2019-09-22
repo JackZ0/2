@@ -80,6 +80,7 @@
      <string>查看（&amp;V）</string>
     </property>
     <addaction name="urlaction"/>
+    <addaction name="listaction"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
@@ -250,6 +251,11 @@
   <action name="pathaction">
    <property name="text">
     <string>路径</string>
+   </property>
+  </action>
+  <action name="listaction">
+   <property name="text">
+    <string>列表</string>
    </property>
   </action>
  </widget>

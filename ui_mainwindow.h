@@ -52,6 +52,7 @@ public:
     QAction *coloraction;
     QAction *SelectAllaction;
     QAction *pathaction;
+    QAction *listaction;
     QWidget *centralWidget;
     QGridLayout *gridLayout;
     QTextEdit *textEdit;
@@ -144,6 +145,8 @@ public:
         SelectAllaction->setObjectName(QStringLiteral("SelectAllaction"));
         pathaction = new QAction(MainWindow);
         pathaction->setObjectName(QStringLiteral("pathaction"));
+        listaction = new QAction(MainWindow);
+        listaction->setObjectName(QStringLiteral("listaction"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         gridLayout = new QGridLayout(centralWidget);
@@ -206,6 +209,7 @@ public:
         menu_H->addAction(aboutaction);
         menu_H->addAction(pathaction);
         menu_3->addAction(urlaction);
+        menu_3->addAction(listaction);
 
         retranslateUi(MainWindow);
 
@@ -239,6 +243,7 @@ public:
         coloraction->setText(QApplication::translate("MainWindow", "\351\242\234\350\211\262", Q_NULLPTR));
         SelectAllaction->setText(QApplication::translate("MainWindow", "\345\205\250\351\200\211\357\274\210&A)", Q_NULLPTR));
         pathaction->setText(QApplication::translate("MainWindow", "\350\267\257\345\276\204", Q_NULLPTR));
+        listaction->setText(QApplication::translate("MainWindow", "\345\210\227\350\241\250", Q_NULLPTR));
         menu->setTitle(QApplication::translate("MainWindow", "\346\226\207\344\273\266\357\274\210&F\357\274\211", Q_NULLPTR));
         menu_2->setTitle(QApplication::translate("MainWindow", "\347\274\226\350\276\221(&E)", Q_NULLPTR));
         menu_O->setTitle(QApplication::translate("MainWindow", "\346\240\274\345\274\217\357\274\210&O)", Q_NULLPTR));

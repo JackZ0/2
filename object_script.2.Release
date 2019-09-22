@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\dialog.o
+./release\fileinfo.o
+./release\list.o
+./release\qrc_res.o
+./release\moc_mainwindow.o
+./release\moc_dialog.o
+./release\moc_fileinfo.o
+./release\moc_list.o
+);
