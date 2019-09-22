@@ -27,6 +27,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QObject::connect(ui->urlaction,SIGNAL(triggered()),this,SLOT(aboutwebUrlSlot()));
     QObject::connect(ui->aboutsoftwareaction,SIGNAL(triggered()),this,SLOT(aboutdialogSolt()));
     QObject::connect(ui->pathaction,SIGNAL(triggered()),this,SLOT(pathactionSlot()));
+
 }
 
 MainWindow::~MainWindow()

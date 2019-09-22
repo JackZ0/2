@@ -7,6 +7,8 @@
 #include <QDir>
 #include <QFileDialog>
 #include <QMessageBox>
+#include <QDateTime>
+
 namespace Ui {
 class fileinfo;
 }
