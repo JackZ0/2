@@ -46,6 +46,7 @@ private slots:
     void currentDateTimeSlot();
     void aboutwebUrlSlot();
     void aboutdialogSolt();
+    void pathactionSlot();
 };
 
 #endif // MAINWINDOW_H

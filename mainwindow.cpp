@@ -26,6 +26,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QObject::connect(ui->aboutaction,SIGNAL(triggered()),qApp,SLOT(aboutQt()));
     QObject::connect(ui->urlaction,SIGNAL(triggered()),this,SLOT(aboutwebUrlSlot()));
     QObject::connect(ui->aboutsoftwareaction,SIGNAL(triggered()),this,SLOT(aboutdialogSolt()));
+    QObject::connect(ui->pathaction,SIGNAL(triggered()),this,SLOT(pathactionSlot()));
 }
 
 MainWindow::~MainWindow()
@@ -201,4 +202,11 @@ void  MainWindow::aboutwebUrlSlot(){
 void MainWindow::aboutdialogSolt(){
     Dialog *aboutdialog = new Dialog;
     aboutdialog->show();
+}
+
+void MainWindow::pathactionSlot()
+{
+    qDebug()<< "home path is " << QDir::homePath();
+    qDebug()<< "current path is " <<QDir::currentPath();
+    qDebug()<< "temp path is " << QDir::tempPath();
 }

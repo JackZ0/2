@@ -73,7 +73,7 @@
     </property>
     <addaction name="aboutsoftwareaction"/>
     <addaction name="aboutaction"/>
-    <addaction name="updateaction"/>
+    <addaction name="pathaction"/>
    </widget>
    <widget class="QMenu" name="menu_3">
     <property name="title">
@@ -247,9 +247,9 @@
     <string>全选（&amp;A)</string>
    </property>
   </action>
-  <action name="updateaction">
+  <action name="pathaction">
    <property name="text">
-    <string>更新</string>
+    <string>路径</string>
    </property>
   </action>
  </widget>
