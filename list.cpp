@@ -32,9 +32,17 @@ void list::deltetecompanyItemSlot(){
 
 void list::deleteAllcomapanyItemSlot()
 {
-    int counter = ui->listWidget->count();
-    for (int index = 0; index < counter; index++){
-        QListWidgetItem *item = ui->listWidget->takeItem(index);
-        delete item;
+
+    int counter = 0;
+    while(1)
+    {
+        QListWidgetItem *Item = ui->listWidget->takeItem(counter);
+        if(Item != NULL)
+        {
+            delete Item;
+        }
+        else{
+            break;
+        }
     }
 }
