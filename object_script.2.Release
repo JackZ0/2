@@ -4,9 +4,11 @@ INPUT(
 ./release\dialog.o
 ./release\fileinfo.o
 ./release\list.o
+./release\snap.o
 ./release\qrc_res.o
 ./release\moc_mainwindow.o
 ./release\moc_dialog.o
 ./release\moc_fileinfo.o
 ./release\moc_list.o
+./release\moc_snap.o
 );

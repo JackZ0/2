@@ -4,9 +4,11 @@ INPUT(
 ./debug\dialog.o
 ./debug\fileinfo.o
 ./debug\list.o
+./debug\snap.o
 ./debug\qrc_res.o
 ./debug\moc_mainwindow.o
 ./debug\moc_dialog.o
 ./debug\moc_fileinfo.o
 ./debug\moc_list.o
+./debug\moc_snap.o
 );
