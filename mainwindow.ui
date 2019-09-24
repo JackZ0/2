@@ -74,6 +74,7 @@
     <addaction name="aboutsoftwareaction"/>
     <addaction name="aboutaction"/>
     <addaction name="pathaction"/>
+    <addaction name="snapaction"/>
    </widget>
    <widget class="QMenu" name="menu_3">
     <property name="title">
@@ -256,6 +257,11 @@
   <action name="listaction">
    <property name="text">
     <string>列表</string>
+   </property>
+  </action>
+  <action name="snapaction">
+   <property name="text">
+    <string>截图</string>
    </property>
   </action>
  </widget>

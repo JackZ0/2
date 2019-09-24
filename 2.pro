@@ -27,17 +27,20 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     dialog.cpp \
     fileinfo.cpp \
-    list.cpp
+    list.cpp \
+    snap.cpp
 
 HEADERS  += mainwindow.h \
     dialog.h \
     fileinfo.h \
-    list.h
+    list.h \
+    snap.h
 
 FORMS    += mainwindow.ui \
     dialog.ui \
     fileinfo.ui \
-    list.ui
+    list.ui \
+    snap.ui
 
 DISTFILES +=
 
