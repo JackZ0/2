@@ -96,12 +96,6 @@
     </layout>
    </item>
   </layout>
-  <zorder>label</zorder>
-  <zorder>checkBox</zorder>
-  <zorder>horizontalLayoutWidget</zorder>
-  <zorder>horizontalLayoutWidget_2</zorder>
-  <zorder>label_2</zorder>
-  <zorder>screenlabel</zorder>
  </widget>
  <resources/>
  <connections/>

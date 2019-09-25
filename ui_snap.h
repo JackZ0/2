@@ -114,10 +114,6 @@ public:
 
         verticalLayout_3->addLayout(verticalLayout_2);
 
-        label->raise();
-        checkBox->raise();
-        label_2->raise();
-        screenlabel->raise();
 
         retranslateUi(snap);
 

@@ -37,5 +37,4 @@ void fileinfo::getFileInfoSlot(){
     }else{
         ui->isDirlineEdit->setText("不是");
     }
-
 }
