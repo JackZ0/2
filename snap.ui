@@ -73,14 +73,14 @@
        <item>
         <widget class="QPushButton" name="pushButton_2">
          <property name="text">
-          <string>保存截图</string>
+          <string>新建截图</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QPushButton" name="pushButton">
          <property name="text">
-          <string>获取截图</string>
+          <string>保存截图</string>
          </property>
         </widget>
        </item>
@@ -98,5 +98,22 @@
   </layout>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>snap</receiver>
+   <slot>exec()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>337</x>
+     <y>248</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>97</x>
+     <y>262</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

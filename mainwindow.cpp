@@ -3,6 +3,7 @@
 #include "dialog.h"
 #include "fileinfo.h"
 #include "list.h"
+#include "snap.h"
 
 #include <QtCore>
 MainWindow::MainWindow(QWidget *parent) :
@@ -30,6 +31,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QObject::connect(ui->aboutsoftwareaction,SIGNAL(triggered()),this,SLOT(aboutdialogSolt()));
     QObject::connect(ui->pathaction,SIGNAL(triggered()),this,SLOT(pathactionSlot()));
     QObject::connect(ui->listaction,SIGNAL(triggered()),this,SLOT(listactionSlot()));
+    QObject::connect(ui->snapaction,SIGNAL(triggered()),this,SLOT(snapactionSlot()));
 }
 
 MainWindow::~MainWindow()
@@ -222,3 +224,8 @@ void MainWindow::listactionSlot()
     listDialog->show();
 }
 
+void MainWindow::snapactionSlot()
+{
+    snap *snapDialog = new snap;
+    snapDialog->show();
+}

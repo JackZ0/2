@@ -48,7 +48,7 @@ private slots:
     void aboutdialogSolt();
     void pathactionSlot();
     void listactionSlot();
-
+    void snapactionSlot();
 };
 
 #endif // MAINWINDOW_H
