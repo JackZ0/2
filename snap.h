@@ -9,9 +9,11 @@
 #include <QMessageBox>
 #include <QDesktopWidget>
 #include <QDesktopServices>
-
+#include <QClipboard>
 #include <QFileDialog>
 #include <QStandardPaths>
+#include <QDebug>
+
 namespace Ui {
 class snap;
 }

@@ -32,6 +32,11 @@ void snap::shotScreenSlot()
     //QPixmap QPixmap::grabWindow(WId window, int x = 0, int y = 0, int width = -1, int height = -1)
     this->pixmap = QPixmap::grabWindow(QApplication::desktop()->winId());
     ui->screenlabel->setPixmap(this->pixmap.scaled(ui->screenlabel->size()));
+
+    QClipboard *clipboard = QApplication::clipboard();
+    QString originalText = clipboard->text();
+    qDebug() << "current clipboard" << originalText;
+    clipboard->setPixmap(this->pixmap);
     this->show();
     this->timer->stop();
 }
