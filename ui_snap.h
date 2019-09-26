@@ -128,7 +128,7 @@ public:
         label_2->setText(QApplication::translate("snap", "\345\273\266\346\227\266\346\227\266\351\227\264\357\274\210S)\357\274\232", Q_NULLPTR));
         checkBox->setText(QApplication::translate("snap", "\346\230\257\345\220\246\345\273\266\346\227\266", Q_NULLPTR));
         pushButton->setText(QApplication::translate("snap", "\346\226\260\345\273\272\346\210\252\345\233\276", Q_NULLPTR));
-        savepicpushButton->setText(QApplication::translate("snap", "\344\277\235\345\255\230", Q_NULLPTR));
+        savepicpushButton->setText(QApplication::translate("snap", "\344\277\235\345\255\230\346\210\252\345\233\276", Q_NULLPTR));
         exitpushButton->setText(QApplication::translate("snap", "\351\200\200\345\207\272", Q_NULLPTR));
     } // retranslateUi
 

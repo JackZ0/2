@@ -36,3 +36,11 @@ void snap::shotScreenSlot()
     this->timer->stop();
 }
 
+
+void snap::on_savepicpushButton_clicked()
+{
+
+    QString fileName = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) +
+            "/data/organization/application";
+    this->pixmap.save(fileName);
+}

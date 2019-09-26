@@ -80,7 +80,7 @@
        <item>
         <widget class="QPushButton" name="savepicpushButton">
          <property name="text">
-          <string>保存</string>
+          <string>保存截图</string>
          </property>
         </widget>
        </item>

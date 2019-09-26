@@ -10,6 +10,8 @@
 #include <QDesktopWidget>
 #include <QDesktopServices>
 
+#include <QFileDialog>
+#include <QStandardPaths>
 namespace Ui {
 class snap;
 }
@@ -25,6 +27,7 @@ public:
 private slots:
     void shotScreenSlot();
     void on_pushButton_clicked();
+    void on_savepicpushButton_clicked();
 
 private:
     Ui::snap *ui;
