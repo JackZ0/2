@@ -7,6 +7,7 @@
 #include <QTimer>
 #include <QDesktopWidget>
 #include <QMessageBox>
+#include <QDesktopServices>
 
 namespace Ui {
 class snap;
@@ -21,8 +22,10 @@ public:
     ~snap();
 
 private slots:
-    void on_newSlotpushButton_clicked();
+
     void shotScreenSlot();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::snap *ui;

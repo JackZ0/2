@@ -39,9 +39,9 @@ public:
     QCheckBox *checkBox;
     QHBoxLayout *horizontalLayout;
     QSpacerItem *horizontalSpacer;
-    QPushButton *pushButton_2;
     QPushButton *pushButton;
-    QPushButton *pushButton_3;
+    QPushButton *savepicpushButton;
+    QPushButton *exitpushButton;
 
     void setupUi(QDialog *snap)
     {
@@ -93,20 +93,20 @@ public:
 
         horizontalLayout->addItem(horizontalSpacer);
 
-        pushButton_2 = new QPushButton(snap);
-        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-
-        horizontalLayout->addWidget(pushButton_2);
-
         pushButton = new QPushButton(snap);
         pushButton->setObjectName(QStringLiteral("pushButton"));
 
         horizontalLayout->addWidget(pushButton);
 
-        pushButton_3 = new QPushButton(snap);
-        pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
+        savepicpushButton = new QPushButton(snap);
+        savepicpushButton->setObjectName(QStringLiteral("savepicpushButton"));
 
-        horizontalLayout->addWidget(pushButton_3);
+        horizontalLayout->addWidget(savepicpushButton);
+
+        exitpushButton = new QPushButton(snap);
+        exitpushButton->setObjectName(QStringLiteral("exitpushButton"));
+
+        horizontalLayout->addWidget(exitpushButton);
 
 
         verticalLayout_2->addLayout(horizontalLayout);
@@ -116,7 +116,6 @@ public:
 
 
         retranslateUi(snap);
-        QObject::connect(pushButton_3, SIGNAL(clicked()), snap, SLOT(exec()));
 
         QMetaObject::connectSlotsByName(snap);
     } // setupUi
@@ -128,9 +127,9 @@ public:
         label->setText(QApplication::translate("snap", "\345\273\266\346\227\266\351\200\211\351\241\271\357\274\232", Q_NULLPTR));
         label_2->setText(QApplication::translate("snap", "\345\273\266\346\227\266\346\227\266\351\227\264\357\274\210S)\357\274\232", Q_NULLPTR));
         checkBox->setText(QApplication::translate("snap", "\346\230\257\345\220\246\345\273\266\346\227\266", Q_NULLPTR));
-        pushButton_2->setText(QApplication::translate("snap", "\346\226\260\345\273\272\346\210\252\345\233\276", Q_NULLPTR));
-        pushButton->setText(QApplication::translate("snap", "\344\277\235\345\255\230\346\210\252\345\233\276", Q_NULLPTR));
-        pushButton_3->setText(QApplication::translate("snap", "\351\200\200\345\207\272", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("snap", "\346\226\260\345\273\272\346\210\252\345\233\276", Q_NULLPTR));
+        savepicpushButton->setText(QApplication::translate("snap", "\344\277\235\345\255\230", Q_NULLPTR));
+        exitpushButton->setText(QApplication::translate("snap", "\351\200\200\345\207\272", Q_NULLPTR));
     } // retranslateUi
 
 };
