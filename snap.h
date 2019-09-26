@@ -7,6 +7,7 @@
 #include <QTimer>
 #include <QDesktopWidget>
 #include <QMessageBox>
+#include <QDesktopWidget>
 #include <QDesktopServices>
 
 namespace Ui {
@@ -22,9 +23,7 @@ public:
     ~snap();
 
 private slots:
-
     void shotScreenSlot();
-
     void on_pushButton_clicked();
 
 private:

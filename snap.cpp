@@ -6,7 +6,6 @@ snap::snap(QWidget *parent) :
     ui(new Ui::snap)
 {
     ui->setupUi(this);
-    QObject::connect(ui->pushButton,SIGNAL(triggered()),this,SLOT(on_pushButton_clicked()));
 }
 
 snap::~snap()
@@ -21,8 +20,8 @@ void snap::on_pushButton_clicked()
         this->timer = new QTimer;
         QObject::connect(this->timer,SIGNAL(timeout()),this,SLOT(shotScreenSlot()));
         this->timer->start(ui->spinBox->value()*1000);
-        this->show();
-        this->timer->stop();
+      //  this->show();
+       // this->timer->stop();
     }
     else{
         qApp->beep();
