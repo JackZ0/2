@@ -40,7 +40,7 @@ void snap::shotScreenSlot()
 void snap::on_savepicpushButton_clicked()
 {
 
-    QString fileName = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) +
-            "/data/organization/application";
+    QString fileName = QFileDialog::getSaveFileName(this,"open file", QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) +
+            "/data/organization/application");
     this->pixmap.save(fileName);
 }
