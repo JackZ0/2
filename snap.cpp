@@ -38,7 +38,7 @@ void snap::shotScreenSlot()
     qDebug() << "current clipboard" << originalText;
     clipboard->setPixmap(this->pixmap);
     this->show();
-    this->timer->stop();
+   // this->timer->stop();
 }
 
 void snap::on_savepicpushButton_clicked()
