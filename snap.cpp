@@ -41,6 +41,15 @@ void snap::shotScreenSlot()
    // this->timer->stop();
 }
 
+void snap::contextMenuEvent(QContextMenuEvent *event){
+    QMenu *menu = new QMenu(this);
+    QAction *action = new QAction(this);
+    QObject::connect(action,SIGNAL(triggered()),this,SLOT(on_savepicpushButton_clicked()));
+    action->setText("Save As");
+    menu->addAction(action);
+    menu->exec(QCursor::pos());
+}
+
 void snap::on_savepicpushButton_clicked()
 {
     QString fileName = QFileDialog::getSaveFileName(this,"open file", QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) +

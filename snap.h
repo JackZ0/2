@@ -13,7 +13,10 @@
 #include <QFileDialog>
 #include <QStandardPaths>
 #include <QDebug>
-
+#include <QContextMenuEvent>
+#include <QMenu>
+#include <QAction>
+#include <QCursor>
 namespace Ui {
 class snap;
 }
@@ -25,7 +28,8 @@ class snap : public QDialog
 public:
     explicit snap(QWidget *parent = 0);
     ~snap();
-
+protected:
+    void contextMenuEvent(QContextMenuEvent *event);
 private slots:
     void shotScreenSlot();
     void on_pushButton_clicked();
