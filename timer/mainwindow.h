@@ -5,6 +5,8 @@
 #include <QTImer>
 #include <stdio.h>
 #include <stdlib.h>
+#include <QByteArray>
+
 namespace Ui {
 class MainWindow;
 }
