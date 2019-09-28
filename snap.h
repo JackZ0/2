@@ -17,6 +17,8 @@
 #include <QMenu>
 #include <QAction>
 #include <QCursor>
+#include <QProcess>
+
 namespace Ui {
 class snap;
 }
@@ -34,7 +36,7 @@ private slots:
     void shotScreenSlot();
     void on_pushButton_clicked();
     void on_savepicpushButton_clicked();
-
+    void startNotepadSlot();
 private:
     Ui::snap *ui;
     QTimer *timer;

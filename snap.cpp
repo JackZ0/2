@@ -38,15 +38,20 @@ void snap::shotScreenSlot()
     qDebug() << "current clipboard" << originalText;
     clipboard->setPixmap(this->pixmap);
     this->show();
-   // this->timer->stop();
+    this->timer->stop();
 }
 
 void snap::contextMenuEvent(QContextMenuEvent *event){
     QMenu *menu = new QMenu(this);
     QAction *action = new QAction(this);
+    QAction *processAction = new QAction(this);
+    QObject::connect(processAction,SIGNAL(triggered()),this,SLOT(startNotepadSlot()));
     QObject::connect(action,SIGNAL(triggered()),this,SLOT(on_savepicpushButton_clicked()));
     action->setText("Save As");
+    processAction->setText("start notepad");
     menu->addAction(action);
+    menu->addSeparator();
+    menu->addAction(processAction);
     menu->exec(QCursor::pos());
 }
 
@@ -55,4 +60,9 @@ void snap::on_savepicpushButton_clicked()
     QString fileName = QFileDialog::getSaveFileName(this,"open file", QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) +
             "/data/organization/application");
     this->pixmap.save(fileName);
+}
+
+void snap::startNotepadSlot(){
+    QProcess *process = new QProcess;
+    process->start("notepad.exe");
 }
