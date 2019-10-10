@@ -1,11 +1,14 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-//#include <QtTest/QTest>
+#include <QTest>
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    resize(800,500);
+
+    connect(ui->menuBar,SIGNAL(triggered(QAction*)),this,SLOT(Triggering(QAction*)));
 }
 
 MainWindow::~MainWindow()
@@ -20,7 +23,7 @@ void MainWindow::Triggering(QAction *ac){
 
         while(1){
             sdialog->move(dir,this);
-          //  QTest::qWait(ms);
+            QTest::qWait(ms);
         }
     }
 }
