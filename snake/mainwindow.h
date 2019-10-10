@@ -2,8 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QPainter>
-#include <QRectF>
+#include "snakenode.h"
 namespace Ui {
 class MainWindow;
 }
@@ -18,8 +17,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
-protected:
-    void paintEvent(QPaintEvent *);
+    snakenode *snake;
 };
 
 #endif // MAINWINDOW_H
