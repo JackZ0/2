@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 #include <QKeyEvent>
+
+#include <stdlib.h>
+
 #include "snakenode.h"
 #include "snakedialog.h"
 namespace Ui {
@@ -29,6 +32,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     snakenode *snake;
+    snakenode *food;
     snakedialog *sdialog;
 };
 

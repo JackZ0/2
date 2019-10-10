@@ -23,6 +23,11 @@ void MainWindow::Triggering(QAction *ac){
 
         while(1){
             sdialog->move(dir,this);
+
+            food = new snakenode(this,(qrand()%80)*10,(qrand()%50)*10);
+            if(sdialog->shead->getPos() == food->getPos()){
+                sdialog->eat(dir,this);
+            }
             QTest::qWait(ms);
         }
     }
