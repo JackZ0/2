@@ -25,9 +25,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    snakenode.cpp
+    snakenode.cpp \
+    snakedialog.cpp
 
 HEADERS  += mainwindow.h \
-    snakenode.h
+    snakenode.h \
+    snakedialog.h
 
 FORMS    += mainwindow.ui
