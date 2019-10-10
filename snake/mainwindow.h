@@ -16,6 +16,15 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+public:
+    int dir;
+
+    void keyPressEvent(QKeyEvent *event);
+private slots:
+    void Triggering(QAction *ac);
+
+
+
 private:
     Ui::MainWindow *ui;
     snakenode *snake;

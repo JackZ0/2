@@ -14,7 +14,7 @@ public:
     void InsertHead(QWidget *parent);
     void DeleteTail();
     void eat(int dir,QWidget *parent);
-
+    void move(int dir,QWidget *parent);
 private:
     snakenode *shead;
 signals:
