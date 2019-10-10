@@ -17,18 +17,21 @@ void snakedialog::InsertHead(QWidget *parent){
 void snakedialog::DeleteTail(){
     snakenode *first,*mid,*last;
     mid = shead;
+    first = mid;
     last = shead->next;
+    if(last == NULL){
+        return;
+    }
     while(last != NULL){
         first = mid;
         mid = last;
-
         last = last->next;
     }
 
     first->next = NULL;
     delete mid;
 }
-void snakedialog::eat(int dir,QWidget *parent){
+void snakedialog::move(int dir,QWidget *parent){
     int x,y;
     QPoint pos = shead->getPos();
     x = pos.x();
@@ -52,4 +55,29 @@ void snakedialog::eat(int dir,QWidget *parent){
     }
     shead->setPos(x,y);
     DeleteTail();
+}
+
+void snakedialog::eat(int dir, QWidget *parent){
+    int x,y;
+    QPoint pos = shead->getPos();
+    x = pos.x();
+    y = pos.y();
+
+    switch (dir) {
+    case 1:
+        y -= 10;
+        break;
+    case 2:
+        y += 10;
+        break;
+    case 3:
+        x -= 10;
+        break;
+    case 4:
+        x += 10;
+        break;
+    default:
+        break;
+    }
+    shead->setPos(x,y);
 }
