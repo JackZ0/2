@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "snakenode.h"
+#include "snakedialog.h"
 namespace Ui {
 class MainWindow;
 }
@@ -18,6 +19,7 @@ public:
 private:
     Ui::MainWindow *ui;
     snakenode *snake;
+    snakedialog *sdialog;
 };
 
 #endif // MAINWINDOW_H
