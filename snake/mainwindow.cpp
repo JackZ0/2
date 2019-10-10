@@ -26,5 +26,20 @@ void MainWindow::Triggering(QAction *ac){
 }
 
 void MainWindow::keyPressEvent(QKeyEvent *event){
-    return;
+    switch(event->key()) {
+    case 16777235:
+        dir = 1;
+        break;
+    case 16777237:
+        dir = 2;
+        break;
+    case 16777234:
+        dir = 3;
+        break;
+    case 16777236:
+        dir = 4;
+        break;
+    default:
+        break;
+    }
 }
