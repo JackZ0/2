@@ -21,6 +21,7 @@ void MainWindow::Triggering(QAction *ac){
         sdialog = new snakedialog(this);
         int ms = 300;
         food = new snakenode(this,(qrand()%80)*10,(qrand()%50)*10);
+
         while(1){
             sdialog->move(dir,this);
             if(sdialog->shead->getPos() == food->getPos()){
@@ -51,8 +52,10 @@ void MainWindow::keyPressEvent(QKeyEvent *event){
     }
 
     sdialog->move(dir,this);
-    food = new snakenode(this,(qrand()%80)*10,(qrand()%50)*10);
+
     if(sdialog->shead->getPos() == food->getPos()){
+        delete food;
+        food = new snakenode(this,(qrand()%80)*10,(qrand()%50)*10);
         sdialog->eat(dir,this);
     }
 }
